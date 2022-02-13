@@ -15,7 +15,7 @@ class MathConstants {
     easyQuestionGeneratorName,
     normalQuestionGeneratorName,
     hardQuestionGeneratorName,
-    hexReadQuestionGeneratorName,
+    // hexReadQuestionGeneratorName,
   ];
 
   static QuestionGenerator getQuestionGenerator(String type) {
@@ -26,8 +26,8 @@ class MathConstants {
         return NormalQuestionGenerator();
       case hardQuestionGeneratorName:
         return HardQuestionGenerator();
-      case hexReadQuestionGeneratorName:
-        return HexQuestionGenerator();
+      // case hexReadQuestionGeneratorName:
+      //   return HexQuestionGenerator();
     }
     return NormalQuestionGenerator();
   }
